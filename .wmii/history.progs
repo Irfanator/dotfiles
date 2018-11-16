@@ -1,0 +1,14 @@
+scrot
+killall ncmpcpp
+killall mpd
+purxvt
+firefox
+killall xarchiver
+scream
+nitrogen
+killall compton
+mpc next
+steam
+qutebrowser
+thunar
+urxvt

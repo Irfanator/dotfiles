@@ -1,0 +1,90 @@
+Semua di folder suckless sudah di patch & dimodif besar-besaran, tidak mungkin untuk unpatch pakai file diff
+Pakai file diff hanya sebagai referensi saja 
+xev & xprop adalah temanmu :)
+symlink sangat membantu buat mengelola file
+
+st sudah bisa copas dengan sistem clipboard, pakai ctrl+shift+c & ctrl+shift+v
+mpd & mpc adalah music player yg bisa full dikontrol wm & keyboard
+dunst sebagai notification daemon, ringan & mudah dikustomisasi
+
+Set di sitemmu (opsional), untuk mempermudah akses reboot, shutdown, sleep
+===
+%sudo ALL=NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown, /usr/sbin/pm-suspend-hybrid
+===
+
+
+dwm keyboard binding suckless/dwm/config.h
+----- keyboard shortcut
+Super + d           =   dmenu (app launcher)
+Super + Enter       =   URXvt (main terminal emulator)
+Super + u           =   xterm (backup terminal emulator)
+Super + i           =   browser
+Super + e           =   Thunar (gui file manager)
+Super + Shift + r   =   Reboot sistem
+Super + Shift + s   =   Shutdown sistem
+Alt + a             =   Run mpd
+Alt + z             =   Music random
+Alt + s             =   Music toggle
+Alt + y             =   Music single
+Super + o           =   Music next
+Super + Shift + o   =   Music prev
+Super + b           =   Toggle bar
+Alt + Shift + Up    =   Tambah volume jack audio out
+Alt + Shift + Down  =   Kurangi volume jack audio out
+Alt + Up            =   Music vol+
+Alt + Down          =   Music vol-
+Alt + Left          =   Music Next (alternate)
+Alt + Right         =   Music Prev (alternate)
+Pause               =   Lockscreen
+----- keyboard navigation
+Super + w           =   Kill window
+Super + j,k         =   Ganti window aktif
+Super + h,l         =   Resize master - stack
+Super + Left, Right =   Tukar window dari & ke master - stack
+Super + .,,         =   Set default jumlah window master
+Super + 1           =   Tag 1
+Super + 2           =   Tag 2
+Super + 3           =   Tag 3
+Super + 4           =   Tag 4
+Super + 5           =   Tag 5
+Super + Shift + 1   =   Pindah window aktif ke Tag 1
+Super + Shift + 2   =   Pindah window aktif ke Tag 2
+Super + Shift + 3   =   Pindah window aktif ke Tag 3
+Super + Shift + 4   =   Pindah window aktif ke Tag 4
+Super + Shift + 5   =   Pindah window aktif ke Tag 5
+Super + Tab         =   Pergi ke Tag sebelumnya
+Super + t           =   Layout tilling
+Super + f           =   Layout float
+Super + m           =   Layout monocle
+Super + Space       =   Toggle layout tilling / float
+Super + Shift + Space  =   Toggle window aktif ke mode float / tilling
+Super + 0           =   Preview semua window dalam 1 tag
+Super + Shift + 0   =   Tampilkan window aktif ke semua Tag (pindah window ke tag semula untuk mengakhiri)
+Super + Up          =   Geser window aktif ke atas  dimode float
+Super + Down        =   Geser window aktif ke bawah  dimode float
+Super + Left        =   Geser window aktif ke kiri  dimode float
+Super + Right       =   Geser window aktif ke kanan  dimode float
+Super + Shift + Up     =   Resize perkecil lebar window aktif dimode float
+Super + Shift + Down   =   Resize perbesar lebar window aktif dimode float
+Super + Shift + Left   =   Resize perkecil panjang window aktif dimode float
+Super + Shift + Right  =   Resize perbesar panjang window aktif dimode float
+Super + Control + Up   =   Resize perkecil window aktif dimode float
+Super + Control + Down =   Resize perbesar window aktif dimode float
+----- Glorious dedicated Thinkpad Button
+ThinkVantage        =   Kill window
+Media Mute          =   Mute 
+Media Vol+          =   Tambah volume
+Media Vol-          =   Kurangi volume
+Media Next          =   Music next
+Media Prev          =   Music prev
+Media Stop          =   Music stop
+Media Pause         =   Music toggle
+Sleep               =   Sleep sistem
+
+
+=======
+Gak usah gonta-ganti distro untuk ngejar tampilan, cukup pakai 1 yg membuat Anda nyaman...
+Tampilan bisa dirubah...
+Happy ricing :)
+=======
+https://facebook.com/Irfanator

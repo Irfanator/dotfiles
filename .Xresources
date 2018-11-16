@@ -1,0 +1,65 @@
+URxvt*font: xft:Metis:style=Medium:pixelsize=12:antialias=true:autohint=true, \
+            xft:IPAGothic:style=Medium:pixelsize=12:antialias=false:autohint=true
+URxvt.letterSpace: 1
+URxvt.internalBorder: 10
+URxvt.scrollBar: false
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+
+URxvt.perl-ext:
+URxvt.perl-ext-common:
+
+! ---
+! Colors
+! ---
+#include ".Xresources.colors"
+! special
+*.foreground:   fg   
+*.background:   bg
+*.cursorColor:  fg
+
+
+! blk
+*color0:  bg
+
+! gry
+*color8:  gry
+
+! red
+*color1:  red
+*color5:  red
+*color9:  red
+*color13: red
+
+! grn
+*color2:  grn
+*color3:  grn
+*color10: grn
+*color11: grn
+
+! blu
+*color4:  blu
+*color6:  blu
+*color12: blu
+*color14: blu
+
+! wht
+*color7:  fg
+*color15: fg
+
+
+!2bwm
+twobwm.border_width: 4
+twobwm.outer_border: 4
+twobwm.focus_color: #101608
+twobwm.unfocus_color: #444444
+twobwm.fixed_color: #884444
+twobwm.unkill_color: #444488
+twobwm.outer_border_color: #000000
+twobwm.fixed_unkill_color: #444488
+twobwm.inverted_colors: true|false
+twobwm.enable_compton: true|false

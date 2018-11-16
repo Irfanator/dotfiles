@@ -14,14 +14,14 @@ case $- in
 esac
 
 set -o vim
-
+set -o functrace
 HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTFILE=/dev/null
 shopt -s checkwinsize
-
+trap 'echo -ne "\e]0;"; echo -n $BASH_COMMAND; echo -ne "\007"' DEBUG
 
 
 if [ -f ~/.bash_aliases ]; then
@@ -36,10 +36,13 @@ fi
 
 # prompt
 #PS1='┌─[\d][\u@\h:\w]\n└─> '
+#PS1="\[\e[0m\].\[\e[1;37m\]\u\[\e[0m\] » [\[\e[1;32m\]\W\[\e[0m\]]\[\e[1;37m\]:\[\e[0m\] "
 PS1="\[\e[0m\].\[\e[1;37m\]\u\[\e[0m\] » [\[\e[1;32m\]\W\[\e[0m\]]\[\e[1;37m\]:\[\e[0m\] "
 clear
-sh ~/bars
+sh ~/.scripts/bars
 mpc current
-echo "
+echo "====="
+cal
 
-"
+
+

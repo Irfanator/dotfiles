@@ -1,0 +1,6 @@
+
+order += "time"
+
+time {
+    format = "%A, %Y-%m-%d %T"
+}

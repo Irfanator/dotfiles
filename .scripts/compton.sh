@@ -7,6 +7,6 @@ killall -q compton
 while pgrep -x compton >/dev/null; do sleep 1; done
 
 # Run Compton
-compton --config ~/.compton.conf
+compton --backend glx --config ~/.compton.conf
 
 echo "Compton running.."

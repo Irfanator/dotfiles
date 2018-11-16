@@ -5,9 +5,9 @@ set directory=~/.vim/backup/
 
 
 
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax on
-colorscheme wal
+" colorscheme wal
 set showcmd
 filetype plugin indent off
 
@@ -34,7 +34,14 @@ set wrap
 set tabstop=4 shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
-
+set mouse=r
+" set clipboard=autoselect,unnamed,exclude:cons\|linux
+" noremap <leader>y "+y
+" nmap <leader>y "+y
+" imap <leader>y "+y
+" noremap <leader>p "+p
+"nmap <leader>p "+p
+" imap <leader>p "+p
 
 
 set hlsearch
@@ -56,10 +63,11 @@ imap <F8> <Esc>:tabnew<CR>
 nmap <F9> :tabclose<CR>
 map <F9> :tabclose<CR>
 imap <F9> <Esc>:tabclose<CR>
-nmap <C-n> :NERDTreeToggle<CR>
-map <C-n> :NERDTreeToggle<CR>
-imap <C-n> <Esc>:NERDTreeToggle<CR>
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+" nmap <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
+" imap <C-n> <Esc>:NERDTreeToggle<CR>
+" noremap <leader>h <Esc>:call ToggleHardMode()<CR>
+noremap <F12> :set invnumber<CR>
 
 
 

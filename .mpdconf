@@ -10,6 +10,7 @@ follow_outside_symlinks "yes"
 follow_inside_symlinks  "yes"
 restore_paused          "yes"
 mixer_type	            "software"
+bind_to_address     "127.0.0.1"
 
 # m4a support
 decoder {
@@ -23,10 +24,11 @@ audio_output {
     name            "ALSA"
     device          "hw:0,0"        # optional
     format          "44100:16:2"    # optional
-#    mixer_device    "hw:0,0"       # optional
+    mixer_device    "hw:0,1"       # optional
 #    mixer_device    "default"       # optional
 #    mixer_control   "PCM"           # optional
 #    mixer_index     "0"             # optional
+    mixer_control   "Digital"             # optional
 }
 
 # For ncmpcpp visulizer

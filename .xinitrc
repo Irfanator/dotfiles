@@ -60,24 +60,45 @@ mpd &
 #    sh ~/.scripts/dwm_status.sh
 #    sleep 1
 #done &
-slstatus &
 
 # awesome
 #exec awesome
 
 # bspwm
+#sxhkd &
 #exec bspwm
+
+# pekwm
+#exec pekwm
+
+# btdwm
+#exec btdwm
 
 # dwm
 #while true; do
     # Log stderror to a file 
-    dwm 2> ~/.dwm.log
+#    slstatus &
+#    dwm 1> ~/.dwm.log
     # No error logging
 #    dwm >/dev/null 2>&1
 #done
 
 # i3
-#exec ck-launch-session i3
+exec i3
 
 # xfce
 #exec startxfce4
+
+# 2bwm
+#bash ~/.scripts/bar.sh | lemonbar -p -f "GohuFont:size=8" -f "Sazanami Gothic:size=6" &
+#exec 2bwm
+#st
+
+# catwm
+#catwm
+
+# musca
+#musca
+
+# snapwm / Nextwm
+#exec snapwm

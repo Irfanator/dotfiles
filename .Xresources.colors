@@ -1,0 +1,15 @@
+! dark
+#define bg  #0d0d0d
+#define gry #747c84
+#define red #db2d20
+#define grn #01a252
+#define blu #ae95c7
+#define fg  #c7c7c7
+
+! light
+! #define bg  #fdfdfd
+! #define gry #7d7648
+! #define red #d73737
+! #define grn #01a252
+! #define blu #6684e1
+! #define fg  #0d0d0d
