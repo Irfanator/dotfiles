@@ -1,5 +1,5 @@
 [global]
-font = GohuFont 9
+font = Metis 9
 allow_markup = yes
 format = " %s\n%b"
 sort = no
@@ -9,7 +9,7 @@ bounce_freq = 0
 show_age_threshold = -1
 word_wrap = yes
 ignore_newline = no
-geometry = "1400x18-20+15"
+geometry = "1400x18-20+20"
 shrink = yes
 transparency = 10
 idle_threshold = 0
@@ -40,24 +40,24 @@ history = ctrl+grave
 context = ctrl+shift+grave
 
 [urgency_low]
-#background = "#0D0D0D"
-#foreground = "#79E513"
-background = "#fdfdfd"
-foreground = "#6684e1"
+background = "#0d0d0d"
+foreground = "ffffff"
+#background = "#fdfdfd"
+#foreground = "#6684e1"
 timeout = 2
 
 [urgency_normal]
-#background = "#0D0D0D"
-#foreground = "#79E513"
-background = "#fdfdfd"
-foreground = "#6684e1"
+background = "#0d0d0d"
+foreground = "#ffffff"
+#background = "#fdfdfd"
+#foreground = "#6684e1"
 timeout = 2
 
 [urgency_critical]
-#background = "#939490"
-#foreground = "#21211F"
-background = "#d73737"
-foreground = "#fdfdfd"
+background = "#db2d20"
+foreground = "#ffffff"
+#background = "#d73737"
+#foreground = "#fdfdfd"
 timeout = 10
 
 

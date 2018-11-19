@@ -28,7 +28,7 @@ alias ena10='xinput set-prop 10 "Device Enabled" 1'
 alias dis11='xinput set-prop 11 "Device Enabled" 0'
 alias ena11='xinput set-prop 11 "Device Enabled" 1'
 alias mednafenalsa='/usr/bin/mednafen -sound.device sexyal-literal-default'
-alias steam='LD_PRELOAD="/usr/lib/libasound.so:/usr/lib32/libasound.so.2" steam'
+alias steam1='LD_PRELOAD="/usr/lib/libasound.so.2:/usr/lib32/libasound.so.2" steam'
 
 # environtment kerja
 alias rekapdata='vim /sdcard/Data\ Kapal/Kapal\ -\ Laporan\ Keuangan/Rekap_Keuangan_dan_Gangguan_2018.ipan'

@@ -28,7 +28,20 @@ set	$ws10	workspace 0
 bindsym $mod+s              exec mpc toggle
 bindsym $mod+o              exec mpc next
 bindsym $mod+Shift+o        exec mpc prev
+bindsym $mod+p              exec bash ~/.scripts/song_change.sh
 bindsym $mod+w              sticky toggle
+bindsym XF86AudioRaiseVolume exec amixer -c 0 set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -c 0 set Master 5%-
+bindsym XF86AudioMute        exec amixer -c 0 set Master 0
+bindsym $Alt+Shift+Up       exec amixer -c 0 set Headphone 2%+
+bindsym $Alt+Shift+Down     exec amixer -c 0 set Headphone 2%-
+
+bindsym $mod+e              exec thunar
+bindsym $mod+i              exec qutebrowser
+bindsym $mod+n              exec nitrogen
+bindsym $mod+Shift+n        exec lxappearance
+
+
 
 for_window                  [class="^.*"] border pixel 1
 
@@ -56,7 +69,7 @@ for_window  [class="Thunar"] move to $ws3
 for_window  [class="qutebrowser"] move to $ws2
 for_window  [class="Et"] move to $ws5
 for_window  [class="Wpp"] move to $ws5
-for_window  [class="Wpp"] move to $ws5
+for_window  [class="Wps"] move to $ws5
 for_window  [class="Steam"] move to $ws6
 for_window  [title="Steam - News"] floating enable
 for_window  [class="Xarchiver"] floating enable
