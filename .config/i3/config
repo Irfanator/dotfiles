@@ -85,6 +85,7 @@ for_window  [class="Mousepad"] floating enable
 for_window  [class="Geeqie"] floating enable
 for_window  [class="Nitrogen"] floating enable
 for_window  [class="Lxappearance"] floating enable
+for_window  [class="feh"] floating enable
 
 
 # Font for window titles. Will also be used by the bar unless a different font
