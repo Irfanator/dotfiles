@@ -28,6 +28,7 @@ set	$ws10	workspace 0
 bindsym $mod+s              exec mpc toggle
 bindsym $mod+o              exec mpc next
 bindsym $mod+Shift+o        exec mpc prev
+bindsym $mod+y              exec mpc single
 bindsym $mod+z              exec mpc random
 bindsym $mod+p              exec bash ~/.scripts/song_change.sh
 bindsym $mod+w              sticky toggle
