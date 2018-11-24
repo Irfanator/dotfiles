@@ -1,10 +1,10 @@
 ! dark
 #define bg  #0d0d0d
 #define gry #747c84
-#define red #db2d20
+#define red #fff400
 #define grn #01a252
-#define blu #ae95c7
-#define fg  #c7c7c7
+#define blu #3f6b91
+#define fg  #ffffff
 
 ! light
 ! #define bg  #fdfdfd
