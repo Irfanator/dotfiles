@@ -54,6 +54,7 @@ xset b off &
 nitrogen --restore &
 sleep 1; sh ${HOME}/.scripts/compton.sh &
 sleep 2; sh ${HOME}/.scripts/dunst_reload.sh &
+sleep 4; beep -f 500 -l 50 -r 7
 udiskie &
 mpd &
 #while true; do
