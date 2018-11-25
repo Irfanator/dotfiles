@@ -32,10 +32,13 @@ bindsym $mod+y              exec mpc single
 bindsym $mod+z              exec mpc random
 bindsym $mod+p              exec bash ~/.scripts/song_change.sh
 bindsym $mod+w              sticky toggle
+bindsym $mod+Tab            exec i3-msg workspace back_and_forth
 bindsym XF86AudioRaiseVolume exec amixer -c 0 set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -c 0 set Master 5%-
 bindsym XF86AudioMute        exec amixer -c 0 set Master 0
 bindsym XF86Launch1          exec kill
+bindsym XF86Back            exec i3-msg workspace prev
+bindsym XF86Forward         exec i3-msg workspace next
 bindsym $Alt+Shift+Up       exec amixer -c 0 set Headphone 2%+
 bindsym $Alt+Shift+Down     exec amixer -c 0 set Headphone 2%-
 
@@ -43,6 +46,7 @@ bindsym $mod+e              exec thunar
 bindsym $mod+i              exec qutebrowser
 bindsym $mod+n              exec nitrogen
 bindsym $mod+Shift+n        exec lxappearance
+
 
 bindsym $mod+Shift+m        exec bash ~/.scripts/dunst_reload.sh && bash ~/.scripts/compton.sh
 
