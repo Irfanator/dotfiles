@@ -7,9 +7,9 @@ st sudah bisa copas dengan sistem clipboard, pakai ctrl+shift+c & ctrl+shift+v
 mpd & mpc adalah music player yg bisa full dikontrol wm & keyboard
 dunst sebagai notification daemon, ringan & mudah dikustomisasi
 
-Set di sitemmu (opsional), untuk mempermudah akses reboot, shutdown, sleep
+Set di sitemmu (opsional), untuk mempermudah akses reboot, shutdown, sleep, beep
 ===
-%sudo ALL=NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown, /usr/sbin/pm-suspend-hybrid
+%sudo ALL=NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown, /usr/sbin/pm-suspend-hybrid, /usr/bin/beep
 ===
 
 

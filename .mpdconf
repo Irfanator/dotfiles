@@ -39,4 +39,10 @@ audio_output {
      format          "44100:16:2"    # optional
 }
 
-
+# For nausea
+audio_output {
+    type "fifo"
+    name "Pipe"
+    path "/tmp/audio.fifo"
+    format "44100:16:2"
+}

@@ -6,6 +6,14 @@
 #define blu #3f6b91
 #define fg  #ffffff
 
+! dark
+! #define bg  #0d0d0d
+! #define gry #747c84
+! #define red #db2d20
+! #define grn #01a252
+! #define blu #3f6b91
+! #define fg  #ffffff
+
 ! light
 ! #define bg  #fdfdfd
 ! #define gry #7d7648
