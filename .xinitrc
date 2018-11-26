@@ -51,10 +51,11 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 xset r rate 350 35 &
 xset b off &
 #wal -i "$(< "${HOME}/.cache/wal/wal")" -t &
-nitrogen --restore &
+#nitrogen --restore &
+hsetroot -solid "#00000F" && compton &
 sleep 1; sh ${HOME}/.scripts/compton.sh &
 sleep 2; sh ${HOME}/.scripts/dunst_reload.sh &
-sleep 4; beep -f 500 -l 50 -r 7
+sleep 4; beep -f 200 -l 1000 -D 500 -n -f 1000 -l 50 -D 250 -n -f 2000 -l 50 -D 250 -n -f 1000 -l 50 -D 200 -n -f 1000 -l 50
 udiskie &
 mpd &
 #while true; do
