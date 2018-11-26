@@ -16,6 +16,8 @@ set	$ws9    workspace 9
 set	$ws10	workspace 0
 
 
+exec    i3-msg $ws1
+
 bindsym $mod+s              exec mpc toggle
 bindsym $mod+o              exec mpc next
 bindsym $mod+Shift+o        exec mpc prev
@@ -23,13 +25,13 @@ bindsym $mod+y              exec mpc single
 bindsym $mod+z              exec mpc random
 bindsym $mod+p              exec bash ~/.scripts/song_change.sh
 bindsym $mod+w              sticky toggle
-bindsym $mod+Tab            exec i3-msg workspace back_and_forth
+bindsym $mod+Tab            exec i3-msg workspace back_and_forth && beep -f 1600 -l 20 -n -f 1800 -l 20
 bindsym XF86AudioRaiseVolume exec amixer -c 0 set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -c 0 set Master 5%-
 bindsym XF86AudioMute        exec amixer -c 0 set Master 0
 bindsym XF86Launch1          exec i3-msg kill && beep -f 200 -l 40 -r 2
-bindsym XF86Back            exec i3-msg workspace prev && beep -f 500 -l 20 -n -f 400 -l 20
-bindsym XF86Forward         exec i3-msg workspace next && beep -f 400 -l 20 -n -f 500 -l 20
+bindsym XF86Back            exec i3-msg workspace prev && beep -f 800 -l 20 -n -f 600 -l 20
+bindsym XF86Forward         exec i3-msg workspace next && beep -f 600 -l 20 -n -f 800 -l 20
 bindsym $Alt+Shift+Up       exec amixer -c 0 set Headphone 2%+
 bindsym $Alt+Shift+Down     exec amixer -c 0 set Headphone 2%-
 
@@ -105,7 +107,7 @@ bindsym $mod+semicolon  exec i3-msg focus down && beep -f 800 -l 60 -r 1
 bindsym $mod+Shift+j    exec i3-msg move left && beep -f 1000 -l 20 -r 3
 bindsym $mod+Shift+k    exec i3-msg move right && beep -f 1000 -l 20 -r 3
 bindsym $mod+Shift+l    exec i3-msg move up && beep -f 2000 -l 20 -r 3
-bindsym $mod+Shift+semicolon    move down && beep -f 2000 -l 20 -r 3
+bindsym $mod+Shift+semicolon    exec i3-msg move down && beep -f 2000 -l 20 -r 3
 
 
 bindsym $mod+h  exec i3-msg split h && beep -f 400 -l 60 -n -f 800 -l 40
@@ -121,27 +123,27 @@ bindsym $mod+space          exec i3-msg focus mode_toggle && beep -f 300 -l 50 -
 
 
 # switch to workspace
-bindsym $mod+1 $ws1
-bindsym $mod+2 $ws2
-bindsym $mod+3 $ws3
-bindsym $mod+4 $ws4
-bindsym $mod+5 $ws5
-bindsym $mod+6 $ws6
-bindsym $mod+7 $ws7
-bindsym $mod+8 $ws8
-bindsym $mod+9 $ws9
+bindsym $mod+1 exec i3-msg $ws1 && beep -f 1600 -l 30
+bindsym $mod+2 exec i3-msg $ws2 && beep -f 1600 -l 30
+bindsym $mod+3 exec i3-msg $ws3 && beep -f 1600 -l 30
+bindsym $mod+4 exec i3-msg $ws4 && beep -f 1600 -l 30
+bindsym $mod+5 exec i3-msg $ws5 && beep -f 1600 -l 30
+bindsym $mod+6 exec i3-msg $ws6 && beep -f 1600 -l 30
+bindsym $mod+7 exec i3-msg $ws7 && beep -f 1600 -l 30
+bindsym $mod+8 exec i3-msg $ws8 && beep -f 1600 -l 30
+bindsym $mod+9 exec i3-msg $ws9 && beep -f 1600 -l 30
 bindsym $mod+0 $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to $ws1
-bindsym $mod+Shift+2 move container to $ws2
-bindsym $mod+Shift+3 move container to $ws3
-bindsym $mod+Shift+4 move container to $ws4
-bindsym $mod+Shift+5 move container to $ws5
-bindsym $mod+Shift+6 move container to $ws6
-bindsym $mod+Shift+7 move container to $ws7
-bindsym $mod+Shift+8 move container to $ws8
-bindsym $mod+Shift+9 move container to $ws9
+bindsym $mod+Shift+1 exec i3-msg move container to $ws1 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+2 exec i3-msg move container to $ws2 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+3 exec i3-msg move container to $ws3 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+4 exec i3-msg move container to $ws4 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+5 exec i3-msg move container to $ws5 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+6 exec i3-msg move container to $ws6 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+7 exec i3-msg move container to $ws7 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+8 exec i3-msg move container to $ws8 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
+bindsym $mod+Shift+9 exec i3-msg move container to $ws9 && beep -f 1600 -l 20 -n -f 1800 -l 20 -n -f 1200 -l 200
 bindsym $mod+Shift+0 move container to $ws10
 
 bindsym $mod+Shift+c reload
@@ -159,7 +161,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r i3-msg mode "resize" && beep -f 900 -l 200
+bindsym $mod+r exec i3-msg mode "resize" && beep -f 900 -l 200
 
 bar {
         position        top
