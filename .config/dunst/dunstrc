@@ -1,5 +1,5 @@
 [global]
-font = Metis 9
+font = fxd 9
 allow_markup = yes
 format = " %s\n%b"
 sort = no
@@ -20,10 +20,10 @@ history_length = 100
 show_indicators = yes
 line_height = 0
 separator_height = 0
-padding = 3
+padding = 4
 horizontal_padding = 4
 separator_color = frame
-startup_notification = true
+startup_notification = false
 dmenu = /usr/bin/dmenu -p dunst:
 browser = /usr/bin/firefox -new-tab
 #icon_position = on
@@ -58,6 +58,6 @@ background = "#db2d20"
 foreground = "#ffffff"
 #background = "#d73737"
 #foreground = "#fdfdfd"
-timeout = 10
+timeout = 4
 
 

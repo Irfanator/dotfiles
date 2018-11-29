@@ -52,10 +52,10 @@ xset r rate 350 35 &
 xset b off &
 #wal -i "$(< "${HOME}/.cache/wal/wal")" -t &
 #nitrogen --restore &
-hsetroot -solid "#00000F" && compton &
-sleep 1; bash .scripts/compton.sh &
-sleep 2; bash .scripts/dunst_reload.sh &
-sleep 2; beep -f 200 -l 1000 -D 500 -n -f 1000 -l 50 -D 50 -n -f 2000 -l 50 -D 50 -n -f 800 -l 50 -D 50 -n -f 1000 -l 50 -D 50 -n  -f 2000 -l 50 -D 50 -n  -f 3000 -l 50
+hsetroot -solid "#00000F" &
+#sleep 1; bash .scripts/compton.sh &
+sleep 1; bash .scripts/dunst_reload.sh &
+sleep 4; beep -f 200 -l 1000 -D 500 -n -f 1000 -l 50 -D 50 -n -f 2000 -l 50 -D 50 -n -f 800 -l 50 -D 50 -n -f 1000 -l 50 -D 50 -n  -f 2000 -l 50 -D 50 -n  -f 3000 -l 50
 udiskie &
 mpd &
 #while true; do

@@ -17,6 +17,8 @@ set	$ws10	workspace 0
 
 
 exec    i3-msg $ws1
+exec --no-startup-id    urxvt
+exec --no-startup-id    notify-send -u critical "Welcome back!!"
 
 bindsym $mod+s              exec mpc toggle
 bindsym $mod+o              exec mpc next
@@ -48,10 +50,10 @@ bindsym $mod+Shift+m        exec bash ~/.scripts/dunst_reload.sh && bash ~/.scri
 for_window                  [class="^.*"] border pixel 1
 
 
-set_from_resource   $fg     color7	#c7c7c7
-set_from_resource   $bg     color4	#ae95c7
-set_from_resource   $bgf    color1	#db2d20
-set_from_resource   $bord   color0	#0d0d0d
+set_from_resource   $fg     i3wm.color7      #c7c7c7
+set_from_resource   $bg     i3wm.color4      #ae95c7
+set_from_resource   $bgf    i3wm.color1      #db2d20
+set_from_resource   $bord   i3wm.color0      #0d0d0d
 
 
 ## i3 class               border  background    text   indicator   child_border
@@ -87,7 +89,7 @@ for_window  [class="Lxappearance"] floating enable
 for_window  [class="feh"] floating enable
 
 
-font pango:Metis 8
+font pango:fxd 9
 
 floating_modifier $mod
 
@@ -165,6 +167,16 @@ bindsym $mod+r exec i3-msg mode "resize" && beep -f 900 -l 200
 
 bar {
         position        top
-        status_command  exec    xtitle -s -f
         status_command  i3status
+        colors {
+           background #00000f
+           statusline #ffffff
+           separator #dd0000
+           #                  border  backgr. text
+           focused_workspace  #0d0d0d #fff400 #00000f
+           active_workspace   #0d0d0d #00000f #ffffff
+           inactive_workspace #0d0d0d #0000ff #ffffff
+           urgent_workspace   #0d0d0d #0f0000 #ffffff
+        }
 }
+
