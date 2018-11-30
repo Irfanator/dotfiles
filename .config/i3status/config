@@ -1,6 +1,42 @@
 
+order += "volume master"
+order += "disk /sdcard"
+order += "ethernet ens5"
+order += "wireless wlp3s0"
+order += "cpu_temperature 0"
+order += "cpu_usage"
 order += "time"
 
+volume master {
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+        format = " Vol %volume "
+}
+
+disk "/sdcard" {
+        format = " SD %free "
+}
+
+ethernet eth0 {
+        format_up = " %ip "
+        format_down = "  "
+}
+
+wireless wlp3s0 {
+        format_up = " %quality %ip "
+        format_down = "  "
+}
+
+cpu_temperature 0 {
+        format = " %degrees °C "
+        path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+cpu_usage {
+        format = " CPU %usage "
+}
+
 time {
-    format = "%A, %Y-%m-%d %T"
+        format = "%A, %Y-%m-%d %T"
 }
