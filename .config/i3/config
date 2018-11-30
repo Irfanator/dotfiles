@@ -41,6 +41,7 @@ bindsym $mod+e              exec thunar
 bindsym $mod+i              exec qutebrowser
 bindsym $mod+n              exec nitrogen
 bindsym $mod+Shift+n        exec lxappearance
+bindsym Pause               exec slock
 
 
 bindsym $mod+Shift+m        exec bash ~/.scripts/dunst_reload.sh && bash ~/.scripts/compton.sh
@@ -97,7 +98,7 @@ bindsym $mod+Return     exec beep -f 1000 -l 40 -r 2 && urxvt
 
 bindsym $mod+Shift+q    exec i3-msg kill && beep -f 200 -l 40 -r 2
 
-bindsym $mod+d exec dmenu_run -b -p "    >  " -fn "Metis:size=8:antialias=false" -nb "#0d0d0d" -nf "#ffffff" -sb "#db2d20" -sf "#ffffff" && beep -f 200 -l 60 -r 1
+bindsym $mod+d exec dmenu_run -b -p "    »  " -fn "fxd:size=9:antialias=false" -nb "#00000f" -nf "#ffffff" -sb "#0000ff" -sf "#ffffff" && beep -f 200 -l 60 -r 1
 
 
 bindsym $mod+j          exec i3-msg focus left && beep -f 600 -l 60 -r 1

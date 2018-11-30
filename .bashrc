@@ -41,7 +41,7 @@ PS1="\[\e[0m\].\[\e[1;37m\]\u\[\e[0m\] » [\[\e[1;32m\]\W\[\e[0m\]]\[\e[1;37m\]:
 clear
 sh ~/.scripts/bars
 mpc current
-echo "====="
+echo "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
 cal
 
 
