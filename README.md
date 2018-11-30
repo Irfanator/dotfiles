@@ -20,7 +20,7 @@
     - [Metis](https://github.com/kori/metis-font)
     - [M+](http://mplus-fonts.osdn.jp/mplus-bitmap-fonts/download/)
     - [unscii](http://pelulamu.net/unscii/)
-    - [pSazanami-gothic](https://osdn.net/projects/efont/releases/10087) (backend Japanese unicode)
+    - [Sazanami-gothic](https://osdn.net/projects/efont/releases/10087) (backend Japanese unicode)
 + Lockscreen
     - slock (simple, minimal, functional)
 + Notification Daemon
