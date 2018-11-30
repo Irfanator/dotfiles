@@ -1,12 +1,12 @@
 # Dotfiles
 
 
-### Resources
+### Resources & Software I use
 + **Current OS**
     - [Artix Linux](https://artixlinux.org/) (I use Arch btw)
 + **WM**
     - dwm
-    - i3wm (currently my main wm)
+    - [i3wm](https://github.com/Airblader/i3) (currently my main wm)
 + **Launcher**
     - dmenu_run
 + **File manager**
@@ -24,7 +24,7 @@
 + **Lockscreen**
     - slock (simple, minimal, functional)
 + **Notification Daemon**
-    - Dunst (cute configurable notification daemon)
+    - [dunst](https://dunst-project.org/) (cute configurable notification daemon)
 + **Image viewer**
     - feh
     - Geeqie (easy manage photos, easy bulk rename)
@@ -51,8 +51,8 @@
 + **Theme setter**
     - lxappearance
 + **Compositor** (rarely use it)
-    - compton
-    - unagi (run & enjoy no flickering screen)
+    - [compton](https://github.com/tryone144/compton)
+    - [unagi](https://projects.mini-dweeb.org/projects/unagi/wiki) (run & enjoy no flickering screen)
 + **Media player**
     - mpd
     - mpc (imagine, you can control your music from only keyboard)
@@ -60,14 +60,16 @@
     - nausea (mpd visualizer, I can watch it all day)
     - VLC
     - mpv
-+ **Backup tool**
++ **Backup tools**
     - git
     - rsync
-    - rclone
+    - [rclone](https://rclone.org/)
 + **Misc**
     - beep
+    - fbterm (when you don't need Xorg but want fancy looking terminal)
     - lilo (simple, easy, minimal bootloader)
     - scrot (simple screenshoter)
+    - tmux
 
 
 ### Screenshot
