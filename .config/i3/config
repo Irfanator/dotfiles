@@ -172,7 +172,7 @@ bar {
         colors {
            background #00000f
            statusline #ffffff
-           separator #dd0000
+           separator #dd4444
            #                  border  backgr. text
            focused_workspace  #0d0d0d #fff400 #00000f
            active_workspace   #0d0d0d #00000f #ffffff
@@ -181,3 +181,20 @@ bar {
         }
 }
 
+bar {
+        position        bottom
+        status_command  xtitle -s
+        mode            dock
+        tray_output     none
+        workspace_buttons no
+        colors {
+           background #00000f
+           statusline #ffffff
+           separator #dd0000
+           #                  border  backgr. text
+           focused_workspace  #0d0d0d #fff400 #00000f
+           active_workspace   #0d0d0d #00000f #ffffff
+           inactive_workspace #0d0d0d #0000ff #ffffff
+           urgent_workspace   #0d0d0d #0f0000 #ffffff
+        }
+}

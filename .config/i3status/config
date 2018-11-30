@@ -1,5 +1,6 @@
 
 order += "volume master"
+order += "volume jack"
 order += "disk /sdcard"
 order += "ethernet ens5"
 order += "wireless wlp3s0"
@@ -11,7 +12,14 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
-        format = " Vol %volume "
+        format = " Master %volume "
+}
+
+volume jack {
+        device = "default"
+        mixer = "Headphone"
+        mixer_idx = 0
+        format = " Jack %volume "
 }
 
 disk "/sdcard" {
