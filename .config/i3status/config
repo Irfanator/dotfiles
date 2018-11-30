@@ -23,7 +23,7 @@ volume jack {
 }
 
 disk "/sdcard" {
-        format = " SD %free "
+        format = " SDCard %free "
 }
 
 ethernet eth0 {
