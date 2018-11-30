@@ -60,10 +60,15 @@
     - nausea (mpd visualizer, I can watch it all day)
     - VLC
     - mpv
++ **Backup tool**
+    - git
+    - rsync
+    - rclone
 + **Misc**
     - beep
     - lilo (simple, easy, minimal bootloader)
     - scrot (simple screenshoter)
+
 
 ### Screenshot
 ![Current Screenshot](https://raw.githubusercontent.com/Irfanator/dotfiles/master/screenshot_i3.png "Current i3wm screenshot")
