@@ -63,5 +63,7 @@
 + **Misc**
     - beep
     - lilo (simple, easy, minimal bootloader)
+    - scrot (simple screenshoter)
 
+### Screenshot
 ![Current Screenshot](https://raw.githubusercontent.com/Irfanator/dotfiles/master/screenshot_i3.png "Current i3wm screenshot")
