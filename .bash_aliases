@@ -1,6 +1,6 @@
 # Ipan was here
 #crdir="${PWD##*/}"
-crdir='echo "${PWD##*/}"'
+alias crdir='echo "${PWD##*/}"'
 alias edit='vim'
 alias listenlinein='pactl load-module module-loopback'
 alias stoplinelin='pactl unload-module module-loopback'
@@ -36,12 +36,12 @@ alias steam1='LD_PRELOAD="/usr/lib/libasound.so.2:/usr/lib32/libasound.so.2" ste
 alias rekapdata='vim /sdcard/Data\ Kapal/Kapal\ -\ Laporan\ Keuangan/Rekap_Keuangan_dan_Gangguan_2018.ipan'
 alias jurnalgangguan='vim /sdcard/Data\ Kapal/Kapal\ -\ Laporan\ Keuangan/Jurnal_Gangguan_2018.ipan'
 alias rekapakv='vim /sdcard/Data\ Kapal/Akv/2018/Rekap_Aktivasi_Kapal.ipan'
-alias keuangan='et /sdcard/Data\ Kapal/Kapal\ -\ Laporan\ Keuangan/Keuangan\ 2018/Mingguan/005.\ November\ 2018.xlsx'
+alias keuangan='et /sdcard/Data\ Kapal/Kapal\ -\ Laporan\ Keuangan/Keuangan\ 2018/Mingguan/006.\ Desember\ 2018.xlsx'
 alias aktivasi='et /sdcard/Data\ kapal/Akv/2018/Rekap\ Aktivasi\ -\ 2018.xlsx'
 #alias bbk='rsync -avzh /sdcard/Kapal\ -\ Laporan\ Keuangan ~/backup'
 #alias bba='rsync -avzh /sdcard/Ipan\ -\ Data ~/backup'
 alias bad='rsync -avzh /sdcard/Data\ Kapal ~/backup/'
-alias bao='rclone sync -v --ask-password --delete-excluded /sdcard/Data\ Kapal/ IrfanGD:'
+alias bao='rclone sync -v --ask-password --delete-excluded /sdcard/Data\ Kapal/ IpanGD:'
 alias resizejpg40='mogrify -resize 40x40% -quality 80% -filter Lanczos -interlace Plane -gaussian-blur 0.05 -format jpg *.jpg'
 alias resizejpg60='mogrify -resize 60x60% -quality 80% -filter Lanczos -interlace Plane -gaussian-blur 0.05 -format jpg *.jpg'
 alias resizejpg80='mogrify -resize 80x80% -quality 80% -filter Lanczos -interlace Plane -gaussian-blur 0.05 -format jpg *.jpg'

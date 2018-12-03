@@ -2,6 +2,7 @@
 #export NO_AT_BRIDGE=1
 #GOPATH=$HOME/go
 #export GOPATH
+export TERM=xterm
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/local/sbin:/usr/sbin:/sbin"
 PATH=$PATH:$GOPATH/bin
 

@@ -1,0 +1,3 @@
+#!/bin/bash
+urxvt -name ncma -g 80x15 -e ncmpcpp
+exit 0

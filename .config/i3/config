@@ -51,16 +51,20 @@ bindsym $mod+Shift+m        exec bash ~/.scripts/dunst_reload.sh && bash ~/.scri
 for_window                  [class="^.*"] border pixel 1
 
 
-set_from_resource   $fg     i3wm.color7      #c7c7c7
-set_from_resource   $bg     i3wm.color4      #ae95c7
+set_from_resource   $fg     i3wm.foreground  #c7c7c7
+set_from_resource   $bg     i3wm.background  #ae95c7
 set_from_resource   $bgf    i3wm.color1      #db2d20
-set_from_resource   $bord   i3wm.color0      #0d0d0d
+set_from_resource   $bord   i3wm.color4      #0d0d0d
+set_from_resource   $gry    i3wm.color8      #0d0d0d
+set_from_resource   $red    i3wm.color1      #0d0d0d
+set_from_resource   $grn    i3wm.color2      #0d0d0d
+set_from_resource   $blu    i3wm.color4      #0d0d0d
 
 
 ## i3 class               border  background    text   indicator   child_border
 client.focused                  $bord   $bgf   $fg    $bgf   $bgf
-client.focused_inactive         $bord   $bg    $fg    $bg    $bg
-client.unfocused                $bord   $bg    $fg    $bg    $bg
+client.focused_inactive         $bord   $bg    $fg    $bg    $fg
+client.unfocused                $bord   $bg    $fg    $bg    $fg
 client.urgent                   $bord   $bg    $fg    $bg    $bg
 client.placeholder              $bord   $bg    $fg    $bg    $bg 
 client.background               $bord   $bg    $fg    $bg    $bg
@@ -88,6 +92,7 @@ for_window  [class="Geeqie"] floating enable
 for_window  [class="Nitrogen"] floating enable
 for_window  [class="Lxappearance"] floating enable
 for_window  [class="feh"] floating enable
+for_window  [class="URxvt" instance="ncma"] floating enable
 
 
 font pango:fxd 9
@@ -98,7 +103,7 @@ bindsym $mod+Return     exec beep -f 1000 -l 40 -r 2 && urxvt
 
 bindsym $mod+Shift+q    exec i3-msg kill && beep -f 200 -l 40 -r 2
 
-bindsym $mod+d exec dmenu_run -b -p "    »  " -fn "fxd:size=9:antialias=false" -nb "#00000f" -nf "#ffffff" -sb "#0000ff" -sf "#ffffff" && beep -f 200 -l 60 -r 1
+bindsym $mod+d exec dmenu_run -b -p "    »  " -fn "fxd:size=9:antialias=false" -nb "#303030" -nf "#ffffff" -sb "#0d0d0d" -sf "#ffffff" && beep -f 200 -l 60 -r 1
 
 
 bindsym $mod+j          exec i3-msg focus left && beep -f 600 -l 60 -r 1
@@ -170,14 +175,14 @@ bar {
         position        top
         status_command  i3status
         colors {
-           background #00000f
-           statusline #ffffff
-           separator #dd4444
+           background $gry
+           statusline $fg
+           separator $bgf
            #                  border  backgr. text
-           focused_workspace  #0d0d0d #fff400 #00000f
-           active_workspace   #0d0d0d #00000f #ffffff
-           inactive_workspace #0d0d0d #0000ff #ffffff
-           urgent_workspace   #0d0d0d #0f0000 #ffffff
+           focused_workspace  $bord $bg $fg
+           active_workspace   $bord $bg $fg
+           inactive_workspace $bord $blu $fg
+           urgent_workspace   $bord $red $bg
         }
 }
 
@@ -188,13 +193,13 @@ bar {
         tray_output     none
         workspace_buttons no
         colors {
-           background #00000f
-           statusline #ffffff
-           separator #dd0000
+           background $gry
+           statusline $fg
+           separator $bgf
            #                  border  backgr. text
-           focused_workspace  #0d0d0d #fff400 #00000f
-           active_workspace   #0d0d0d #00000f #ffffff
-           inactive_workspace #0d0d0d #0000ff #ffffff
-           urgent_workspace   #0d0d0d #0f0000 #ffffff
+           focused_workspace  $bord $bg $fg
+           active_workspace   $bord $bg $fg
+           inactive_workspace $bord $blu $fg
+           urgent_workspace   $bord $red $fg
         }
 }

@@ -6,10 +6,11 @@ URxvt.internalBorder: 10
 URxvt.scrollBar: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt*dynamicColors: on
 
-URxvt*inheritPixmap: true
-URxvt*transparent: true
-URxvt*shading: 60
+! URxvt*inheritPixmap: true
+! URxvt*transparent: true
+! URxvt*shading: 25
 
 URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
@@ -57,7 +58,7 @@ URxvt.perl-ext-common:
 *color15: fg
 
 
-!2bwm
+! 2bwm
 twobwm.border_width: 4
 twobwm.outer_border: 4
 twobwm.focus_color: #101608

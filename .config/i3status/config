@@ -2,6 +2,7 @@
 order += "volume master"
 order += "volume jack"
 order += "disk /sdcard"
+order += "disk /home"
 order += "ethernet ens5"
 order += "wireless wlp3s0"
 order += "cpu_temperature 0"
@@ -26,7 +27,11 @@ disk "/sdcard" {
         format = " SDCard %free "
 }
 
-ethernet eth0 {
+disk "/home" {
+        format = " Disk %free "
+}
+
+ethernet ens5 {
         format_up = " %ip "
         format_down = "  "
 }

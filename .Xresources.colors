@@ -1,10 +1,20 @@
 ! custom
-#define bg  #0d0d0d
-#define gry #747c84
+! #define bg  #0d0d0d
+#define bg  #000008
+! #define gry #747c84
+#define gry #303030
 #define red #fff400
 #define grn #01a252
 #define blu #00688b
 #define fg  #ffffff
+
+! grayscale
+! #define bg  #f7f7f7
+! #define gry #525252
+! #define red #7c7c7c
+! #define grn #8e8e8e
+! #define blu #686868
+! #define fg  #101010
 
 ! dark
 ! #define bg  #0d0d0d
