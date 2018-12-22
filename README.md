@@ -15,7 +15,7 @@
 + **Terminal emulator**
     - URxvt
 + **Fonts**
-    - [dweep](https://github.com/DaisukeAramaki/Dotfiles/tree/master/Dweepw)
+    - [dweep](https://github.com/DaisukeAramaki/Dotfiles/tree/master/Dweep)
     - [GohuFont](http://font.gohu.org/)
     - [Metis](https://github.com/kori/metis-font)
     - [M+](http://mplus-fonts.osdn.jp/mplus-bitmap-fonts/download/)
