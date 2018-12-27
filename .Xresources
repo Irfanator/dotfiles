@@ -23,7 +23,7 @@ URxvt.perl-ext-common:
 ! Colors
 ! ---
 #include ".Xresources.colors"
-! special
+
 *.foreground:   fg   
 *.background:   bg
 *.cursorColor:  fg
