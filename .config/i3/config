@@ -19,6 +19,8 @@ set	$ws10	workspace 0
 exec    i3-msg $ws1
 exec --no-startup-id    urxvt
 exec --no-startup-id    notify-send -u critical "Welcome back!!"
+exec --no-startup-id    udiskie
+exec --no-startup-id    mpd
 
 bindsym $mod+s              exec mpc toggle
 bindsym $mod+o              exec mpc next
@@ -93,6 +95,7 @@ for_window  [class="Nitrogen"] floating enable
 for_window  [class="Lxappearance"] floating enable
 for_window  [class="feh"] floating enable
 for_window  [class="URxvt" instance="ncma"] floating enable
+for_window  [class="URxvt" instance="ncna"] floating enable
 
 
 font pango:fxd 9

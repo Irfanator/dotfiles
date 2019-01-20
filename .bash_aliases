@@ -1,5 +1,6 @@
 # Ipan was here
 #crdir="${PWD##*/}"
+alias e='startx'
 alias crdir='echo "${PWD##*/}"'
 alias edit='vim'
 alias listenlinein='pactl load-module module-loopback'

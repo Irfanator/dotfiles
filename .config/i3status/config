@@ -13,14 +13,14 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
-        format = " Master %volume "
+        format = " マスター %volume "
 }
 
 volume jack {
         device = "default"
         mixer = "Headphone"
         mixer_idx = 0
-        format = " Jack %volume "
+        format = " ジャック %volume "
 }
 
 disk "/sdcard" {
@@ -28,7 +28,7 @@ disk "/sdcard" {
 }
 
 disk "/home" {
-        format = " Disk %free "
+        format = " ディスク %free "
 }
 
 ethernet ens5 {
