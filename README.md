@@ -54,7 +54,6 @@
     - lxappearance
 + **Compositor** (rarely use it)
     - [compton](https://github.com/tryone144/compton)
-    - [unagi](https://projects.mini-dweeb.org/projects/unagi/wiki) (run & enjoy no flickering screen)
 + **Media player**
     - mpd
     - mpc (imagine, you can control your music from only keyboard)
@@ -68,6 +67,7 @@
     - [rclone](https://rclone.org/)
 + **Misc**
     - beep
+    - [flashfocus](https://github.com/fennerm/flashfocus) (focus indicator for tiling wm)
     - fbterm (when you don't need Xorg but want fancy looking terminal)
     - lilo (simple, easy, minimal bootloader)
     - scrot (simple screenshoter)
