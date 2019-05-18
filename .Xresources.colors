@@ -1,12 +1,11 @@
 ! custom
-! #define bg  #0d0d0d
-#define bg  #000008
+! #define bg  #020304
 ! #define gry #747c84
-#define gry #303030
-#define red #fff400
-#define grn #01a252
-#define blu #00688b
-#define fg  #ffffff
+! #define gry #303030
+! #define red #fff400
+! #define grn #01a252
+! #define blu #00688b
+! #define fg  #ffffff
 
 ! grayscale
 ! #define bg  #f7f7f7
@@ -25,9 +24,9 @@
 ! #define fg  #ffffff
 
 ! light
-! #define bg  #fdfdfd
-! #define gry #7d7648
-! #define red #d73737
-! #define grn #01a252
-! #define blu #6684e1
-! #define fg  #0d0d0d
+#define bg  #f2f3f4
+#define gry #7d7648
+#define red #d73737
+#define grn #01a252
+#define blu #6684e1
+#define fg  #000000

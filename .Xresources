@@ -1,12 +1,15 @@
-URxvt*font: xft:fxd:style=semicondensed:pixelsize=12:antialias=true:autohint=true, \
+URxvt*font: xft:Bok MonteCarlo:style=Sans:pixelsize=9:antialias=true:autohint=true, \
             ! xft:Metis:style=Medium:pixelsize=12:antialias=true:autohint=true, \
-            xft:IPAGothic:style=Medium:pixelsize=12:antialias=false:autohint=true
+            ! xft:IPAGothic:style=Medium:pixelsize=12:antialias=false:autohint=true, \
+            xft:Sazanami Gothic:style=Gothic-Regular, Reqular:pixelsize=9:antialias=false:autohint=true
 URxvt.letterSpace: 1
 URxvt.internalBorder: 10
 URxvt.scrollBar: false
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt*dynamicColors: on
+URxvt*cursorUnderline: true 
+URxvt.cursorBlink: on
 
 ! URxvt*inheritPixmap: true
 ! URxvt*transparent: true

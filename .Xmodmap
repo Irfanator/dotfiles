@@ -1,3 +1,5 @@
-keycode 64 = Super_L
-add Mod4 = Super_L
-remove Mod1 = Super_L
+! pointer = 1 25 3 4 5 6 7 8 9
+
+remove Lock = Caps_Lock
+keycode 66 = BackSpace
+keycode 22 = Caps_Lock

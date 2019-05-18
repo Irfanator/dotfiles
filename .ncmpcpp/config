@@ -17,7 +17,7 @@ lines_scrolled = "2"
 system_encoding = "utf-8"
 regular_expressions = "extended"
 
-user_interface = "classic"
+user_interface = "alternative"
 #song_list_format = "{$7%n$9} {%t$9}$R{$7%b$9}"
 song_list_format = "{$4%t$9} $R[{$7%l$9}]"
 default_place_to_search_in = "database"

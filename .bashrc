@@ -14,13 +14,13 @@ case $- in
       *) return;;
 esac
 
-set -o vim
-set -o functrace
-HISTCONTROL=ignoreboth
+#set -o vim
+#set -o functrace
+#HISTCONTROL=ignoreboth
 shopt -s histappend
-HISTSIZE=1000
-HISTFILESIZE=2000
-HISTFILE=/dev/null
+#HISTSIZE=1000
+#HISTFILESIZE=2000
+#HISTFILE=/dev/null
 shopt -s checkwinsize
 trap 'echo -ne "\e]0;"; echo -n $BASH_COMMAND; echo -ne "\007"' DEBUG
 

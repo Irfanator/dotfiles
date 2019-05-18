@@ -1,0 +1,113 @@
+[colors]
+bar_bg = ${xrdb:background}
+bar_fg = ${xrdb:foreground}
+border_col = ${xrdb:background}
+red = ${xrdb:color1}
+brightred = ${xrdb:color9}
+cyan = ${xrdb:color8}
+green = ${xrdb:color2}
+white = ${xrdb:color3}
+brightwhite = ${xrdb:color11}
+brightblack = ${xrdb:color4}
+blue = ${xrdb:color12}
+magenta = ${xrdb:color5}
+brightmagenta = ${xrdb:color13}
+brightcyan = ${xrdb:color6}
+brightblue = ${xrdb:color14}
+yellow = ${xrdb:color7}
+brightyellow = ${xrdb:color15}
+
+[settings]
+format-foreground = ${colors.bar_bg}
+format-background = ${colors.brightmagenta}
+format-padding = 1
+
+[bar/top]
+monitor = LVDS-1
+width = 50
+height = 20
+fixed-center = false
+
+border-top-color = ${colors.bar_bg}
+border-bottom-color = ${colors.bar_bg}
+border-top-size = 10
+border-bottom-size = 10
+padding-right = 1
+padding-left = 1
+
+background = ${colors.bar_bg}
+foreground = ${colors.bar_fg}
+
+spacing = 0
+module-margin-left = 1
+module-padding-bottom = 5
+
+font-0 = Bok MonteCarlo:pixelsize=9
+
+modules-left = bspwm
+modules-right = volume network date
+t
+ray-position =
+tray-background = ${colors.bar_bg}
+tray-maxsize = 50
+enable-ipc = false
+
+[bar/mybar]
+monitor = LVDS-1
+width = 50
+height = 20
+fixed-center = false
+
+border-top-color = ${colors.bar_bg}
+border-bottom-color = ${colors.bar_bg}
+border-top-size = 10
+border-bottom-size = 10
+padding-right = 1 
+padding-left = 1 
+
+background = ${colors.bar_bg}
+foreground = ${colors.bar_fg}
+
+spacing = 0 
+module-margin-left = 1 
+module-padding-bottom = 5
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+font-0 = Bok MonteCarlo:pixelsize=9
+
+modules-left = bspwm
+
+tray-position =
+tray-background = ${colors.bar_bg}
+tray-maxsize = 50
+enable-ipc = false
+
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = true
+inline-mode = false
+enable-click = false
+enable-scroll = false
+reverse-scroll = false
+
+format = <label-state> <label-mode>
+label-dimmed-foreground = #555
+label-dimmed-underline = ${bar/top.background}
+label-dimmed-focused-background = #f00
+
+label-focused = %name%
+label-focused-foreground = #ffffff
+label-focused-background = #3f3f3f
+label-focused-underline = #fba922
+
+label-occupied = %name%
+label-occupied-underline = #555555
+
+label-urgent = %name%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-underline = #9b0a20
+
+label-empty = %name%
+label-empty-foreground = #55
