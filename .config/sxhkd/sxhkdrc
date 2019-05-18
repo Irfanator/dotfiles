@@ -151,3 +151,6 @@ alt + shift + Down
 
 super + grave
     flash_window
+
+super + {shift + End, End}
+    sh {~/.scripts/dunst_reload.sh,~/.scripts/compton.sh}
