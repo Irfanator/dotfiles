@@ -6,15 +6,17 @@
     - [Artix Linux](https://artixlinux.org/) (I use Arch btw)
 + **WM**
     - dwm
-    - [i3wm](https://github.com/Airblader/i3) (currently my main wm)
+    - [bspwm](https://github.com/Javyre/bspwm) (currently my main wm)
+    - [i3wm](https://github.com/Airblader/i3)
 + **Launcher**
     - dmenu_run
 + **File manager**
-    - Thunar (for gui, easy bulk rename, fast)
-    - [ranger](https://github.com/ranger/ranger) (for tui)
+    - Thunar
+    - [ranger](https://github.com/ranger/ranger)
 + **Terminal emulator**
     - URxvt
 + **Fonts**
+    - [Bok MonteCarlo](http://www.bok.net/MonteCarlo/)
     - [dweep](https://github.com/DaisukeAramaki/Dotfiles/tree/master/Dweep)
     - [GohuFont](http://font.gohu.org/)
     - [Metis](https://github.com/kori/metis-font)
