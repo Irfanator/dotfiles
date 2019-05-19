@@ -1,113 +1,167 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains a lot of information
+;
+;=====================================================
+; find icon name : fc-match -a |grep -i Material
+; to find icon: xfd -fa MaterialIcons,
+; echo "\ueXXX" to print and paste here
+
+;This file has been edited by squash
 [colors]
-bar_bg = ${xrdb:background}
-bar_fg = ${xrdb:foreground}
-border_col = ${xrdb:background}
-red = ${xrdb:color1}
-brightred = ${xrdb:color9}
-cyan = ${xrdb:color8}
-green = ${xrdb:color2}
-white = ${xrdb:color3}
-brightwhite = ${xrdb:color11}
-brightblack = ${xrdb:color4}
-blue = ${xrdb:color12}
-magenta = ${xrdb:color5}
-brightmagenta = ${xrdb:color13}
-brightcyan = ${xrdb:color6}
-brightblue = ${xrdb:color14}
-yellow = ${xrdb:color7}
-brightyellow = ${xrdb:color15}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
-[settings]
-format-foreground = ${colors.bar_bg}
-format-background = ${colors.brightmagenta}
-format-padding = 1
+[bar/nepu]
+monitor = ${env:MONITOR:LVDS-1}
+width = 705px
+height = 32
+offset-x = 30
+offset-y = 10
+;radius = 12.0
+fixed-center = true
 
-[bar/top]
-monitor = LVDS-1
-width = 50
-height = 20
-fixed-center = false
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
-border-top-color = ${colors.bar_bg}
-border-bottom-color = ${colors.bar_bg}
-border-top-size = 10
-border-bottom-size = 10
-padding-right = 1
-padding-left = 1
+line-size = 1
+line-color = ${xrdb:foreground}
 
-background = ${colors.bar_bg}
-foreground = ${colors.bar_fg}
+padding-left = 4
+padding-right = 4
 
-spacing = 0
+border-size = 1px
+border-color = ${xrdb:foreground}
+
 module-margin-left = 1
-module-padding-bottom = 5
+module-margin-right = 1
 
-font-0 = Bok MonteCarlo:pixelsize=9
-
-modules-left = bspwm
-modules-right = volume network date
-t
-ray-position =
-tray-background = ${colors.bar_bg}
-tray-maxsize = 50
-enable-ipc = false
-
-[bar/mybar]
-monitor = LVDS-1
-width = 50
-height = 20
-fixed-center = false
-
-border-top-color = ${colors.bar_bg}
-border-bottom-color = ${colors.bar_bg}
-border-top-size = 10
-border-bottom-size = 10
-padding-right = 1 
-padding-left = 1 
-
-background = ${colors.bar_bg}
-foreground = ${colors.bar_fg}
-
-spacing = 0 
-module-margin-left = 1 
-module-padding-bottom = 5
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
-
-font-0 = Bok MonteCarlo:pixelsize=9
+font-0 = Bok MonteCarlo:style=Sans:antialias=false:pixelsize=9;1
+font-1 = Sazanami Gothic:style=Gothic-Regular:antialias=false:pixelsize=7;0
 
 modules-left = bspwm
+modules-center = xwindow
+modules-right = memory cpu temperature date
 
-tray-position =
-tray-background = ${colors.bar_bg}
-tray-maxsize = 50
-enable-ipc = false
+tray-position = right
+tray-padding = 0
+
+wm-restack = bspwm
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:24:...%
+format = <label>
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+label-connected = %essid%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${xrdb:color1}
+
+ramp-signal-0 = 0
+ramp-signal-1 = 1
+ramp-signal-2 = 2
+ramp-signal-3 = 3
+ramp-signal-4 = 4
+ramp-signal-foreground = ${xrdb:color1}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+format-mounted-prefix = " "
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${xrdb:color1}
 
 [module/bspwm]
 type = internal/bspwm
-pin-workspaces = true
-inline-mode = false
-enable-click = false
-enable-scroll = false
-reverse-scroll = false
-
-format = <label-state> <label-mode>
-label-dimmed-foreground = #555
-label-dimmed-underline = ${bar/top.background}
-label-dimmed-focused-background = #f00
-
+module-margin-left = 8
+module-margin-right = 4
 label-focused = %name%
-label-focused-foreground = #ffffff
-label-focused-background = #3f3f3f
-label-focused-underline = #fba922
+label-focused-background = ${xrdb:color2}
+label-focused-foreground = ${xrdb:background}
+label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-underline = #555555
+
+label-occupied-foreground = ${xrdb:foreground}
+label-occupied-padding = 1
 
 label-urgent = %name%
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
-label-urgent-underline = #9b0a20
+label-urgent-background = ${xrdb:color1}
+label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = #55
+label-empty-foreground = ${xrdb:color8}
+label-empty-padding = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "CPU "
+format-prefix-foreground = ${xrdb:color4}
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "RAM "
+format-prefix-foreground = ${xrdb:color4}
+label = %percentage_used%%
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = ${xrdb:color4}
+
+label = %date% %time%
+
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 70
+format-prefix = "TEMP "
+format-prefix-foreground = ${xrdb:color4}
+
+format = <label>
+format-warn = <label-warn>
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${xrdb:color2}
+
+[settings]
+screenchange-reload = true
+compositing-background = xor
+;compositing-background = screen
+compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+;pseudo-transparency = true
+

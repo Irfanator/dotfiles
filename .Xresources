@@ -1,6 +1,7 @@
 URxvt*font: xft:Bok MonteCarlo:style=Sans:pixelsize=9:antialias=true:autohint=true, \
             ! xft:Metis:style=Medium:pixelsize=12:antialias=true:autohint=true, \
             ! xft:IPAGothic:style=Medium:pixelsize=12:antialias=false:autohint=true, \
+            xft:fxd:style=Regular, Reqular:pixelsize=9:antialias=false:autohint=false
             xft:Sazanami Gothic:style=Gothic-Regular, Reqular:pixelsize=9:antialias=false:autohint=true
 URxvt.letterSpace: 1
 URxvt.internalBorder: 10

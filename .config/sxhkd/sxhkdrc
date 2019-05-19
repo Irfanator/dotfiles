@@ -10,7 +10,7 @@ super + shift + Return
 
 # program launcher
 super + d
-	dmenu_run -p "  RUN: " -fn "Bok MonteCarlo:size=9:antialias=false" -nb "#a2a3a4" -nf "#0d0d0d" -sb "#0d0d0d" -sf "#f2f3f4"
+	dmenu_run -b -p "  RUN: " -fn "Bok MonteCarlo:size=9:antialias=false" -nb "#a2a3a4" -nf "#0d0d0d" -sb "#0d0d0d" -sf "#f2f3f4"
 
 # make sxhkd reload its configuration files:
 super + Escape
