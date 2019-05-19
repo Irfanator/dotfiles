@@ -75,4 +75,4 @@
 
 
 ### Screenshot
-![Current Screenshot](https://raw.githubusercontent.com/Irfanator/dotfiles/master/screenshot_i3.png "Current i3wm screenshot")
+![Current Screenshot](https://raw.githubusercontent.com/Irfanator/dotfiles/master/screenshot_bspwm.png "Current bspwm screenshot")
