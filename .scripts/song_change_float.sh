@@ -24,11 +24,11 @@ function reset_background
     rm -f "$COVER" 
     if [[ -n "$src" ]] ; then
         #resize the image's width to 300px 
-        convert "$src" -resize 500x "$COVER"
+        convert "$src" -resize 200x "$COVER"
         if [[ -f "$COVER" ]] ; then
            #scale down the cover to 30% of the original
            #place it 1% away from left and 50% away from top.
-           printf "\e]20;${COVER};60x60+80+45:op=keep-aspect\a"
+           printf "\e]20;${COVER};60x60+84+45:op=keep-aspect\a"
         else
             reset_background
         fi

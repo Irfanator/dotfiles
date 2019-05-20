@@ -19,7 +19,7 @@ regular_expressions = "extended"
 
 user_interface = "alternative"
 #song_list_format = "{$7%n$9} {%t$9}$R{$7%b$9}"
-song_list_format = "{$5%t$9} $R[{$5%l$9}]|                        "
+song_list_format = "{$5%t - %f$9} $R[{$5%l$9}]|                        "
 default_place_to_search_in = "database"
 
 playlist_display_mode = "classic"

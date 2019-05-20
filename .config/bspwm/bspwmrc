@@ -30,9 +30,9 @@ bspc rule -a vlc state=floating
 
 
 sxhkd &
-urxvt &
-urxvt &
-sleep 1; urxvt -g 60x18 -e ncmpcpp &
+sleep 0.5; urxvt &
+sleep 0.5; urxvt &
+sleep 1; urxvt -g 60x18 -e sh -c "while true; do ncmpcpp -c ~/.ncmpcpp/config_float; done" &
 sleep 1; bspc node -t pseudo_tiled &
 sh ~/.scripts/compton.sh &
 flashfocus &
