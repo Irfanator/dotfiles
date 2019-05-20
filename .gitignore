@@ -1,4 +1,4 @@
-/home/nepu/.gg/dotfiles/.config/transmission-daemon/*.json
+/home/nepu/.gg/dotfiles/.config/transmission-daemon/stats.json
 /home/nepu/.gg/dotfiles/.config/transmission-daemon/blocklists/*
 /home/nepu/.gg/dotfiles/.config/transmission-daemon/resume/*
 /home/nepu/.gg/dotfiles/.config/transmission-daemon/torrents/*
