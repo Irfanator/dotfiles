@@ -154,3 +154,9 @@ super + grave
 
 super + {shift + End, End}
     sh {~/.scripts/dunst_reload.sh,~/.scripts/compton.sh}
+
+super + Home
+    urxvt -name urxvtf -g 60x18 -e ncmpcpp -c ~/.ncmpcpp/config_float
+
+super + i
+    qutebrowser

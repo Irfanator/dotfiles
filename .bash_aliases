@@ -1,4 +1,6 @@
 # Ipan was here
+alias adbs='sudo adb start-server'
+alias adbss='sudo adb kill-server'
 alias e='startx'
 alias edit='vim'
 alias listenlinein='pactl load-module module-loopback'

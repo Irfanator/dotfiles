@@ -10,6 +10,7 @@ URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt*dynamicColors: on
 URxvt*cursorUnderline: true 
+URxvt*termName: rxvt-unicode
 URxvt.cursorBlink: on
 
 ! URxvt*inheritPixmap: true

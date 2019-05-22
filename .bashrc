@@ -3,6 +3,8 @@
 #GOPATH=$HOME/go
 #export GOPATH
 export TERM=xterm
+export VISUAL=vim
+export EDITOR="$VISUAL"
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/games:/usr/local/sbin:/usr/sbin:/sbin"
 PATH=$PATH:$GOPATH/bin
 
@@ -34,6 +36,9 @@ if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh
   __vte_prompt_command
 fi
+
+bind -r "\C-s"
+stty -ixon
 
 # prompt
 #PS1='┌─[\d][\u@\h:\w]\n└─> '

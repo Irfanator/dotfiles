@@ -59,7 +59,7 @@ hsetroot -solid "#a2a3a4" &
 #sleep 1; sh .scripts/compton.sh; flashfocus &
 #sleep 1; sh .scripts/dunst_reload.sh &
 #beep -f 200 -l 1000 -D 500 -n -f 1000 -l 50 -D 50 -n -f 2000 -l 50 -D 50 -n -f 800 -l 50 -D 50 -n -f 1000 -l 50 -D 50 -n  -f 2000 -l 50 -D 50 -n  -f 3000 -l 50
-sleep 5 && udiskie &
+udiskie &
 mpd &
 #while true; do
 #    sh ~/.scripts/dwm_status.sh

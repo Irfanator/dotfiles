@@ -62,7 +62,10 @@ map <F8> :tabnew<CR>
 imap <F8> <Esc>:tabnew<CR>
 nmap <F9> :tabclose<CR>
 map <F9> :tabclose<CR>
-imap <F9> <Esc>:tabclose<CR>
+imap <F9> :tabclose<CR>
+nmap <C-S> :update<CR>
+map <C-S> :update<CR>
+imap <C-S> <Esc>:update<CR>
 " nmap <C-n> :NERDTreeToggle<CR>
 " map <C-n> :NERDTreeToggle<CR>
 " imap <C-n> <Esc>:NERDTreeToggle<CR>
